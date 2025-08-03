@@ -3,7 +3,7 @@
 @use "../components/index" as *;
 
 .rating {
-  margin-block-start: map.get($spacing, 4);
+  margin-block-start: map.get($spacing, 8);
 
   &__title {
     @include line-clamp(1);
