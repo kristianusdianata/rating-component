@@ -1,0 +1,17 @@
+@use "sass:map";
+@use "../abstracts/index" as *;
+
+.container {
+  inline-size: 100%;
+  min-block-size: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: map.get($spacing, 4);
+
+  @include media-query-sm() {
+    inline-size: px-to-rem(400px);
+    justify-self: center;
+  }
+}

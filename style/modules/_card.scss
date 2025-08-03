@@ -1,0 +1,62 @@
+@use "sass:map";
+@use "../abstracts/index" as *;
+
+%card {
+  padding: map.get($spacing, 8);
+  background: linear-gradient(to bottom, var(--grey-900), hsl(213, 19%, 12%));
+  inline-size: 100%;
+  border-radius: map.get($radius, br-6);
+}
+
+.card-main {
+  @extend %card;
+
+  &__header .title {
+    inline-size: px-to-rem(40px);
+    block-size: px-to-rem(40px);
+    border-radius: map.get($radius, br-full);
+    background-color: var(--grey-800);
+    padding: map.get($spacing, 2);
+  }
+}
+
+.card-notif {
+  @extend %card;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: map.get($spacing, 8);
+  }
+
+  &__header .title {
+    block-size: px-to-rem(100px);
+  }
+
+  &__header .subtitle {
+    @include font-preset-1($color: var(--orange-500), $letter-spacing: 0.02em);
+    display: inline-flex;
+    border-radius: map.get($radius, br-6);
+    padding-inline: map.get($spacing, 4);
+    padding-block: map.get($spacing, 1);
+    background-color: var(--grey-900);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: map.get($spacing, 8);
+    row-gap: map.get($spacing, 2);
+  }
+
+  &__body .title {
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &__body .subtitle {
+    @include font-preset-1($color: var(--grey-500));
+    text-align: center;
+  }
+}

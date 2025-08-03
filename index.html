@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font end -->
+
+    <!-- css start -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- css end -->
+
+    <script src="./script/index.js" type="module"></script>
+  </head>
+  <body>
+    <main class="container">
+      <article class="card-main">
+        <header class="card-main__header">
+          <h1 class="title">
+            <img src="./images/icon-star.svg" alt="" aria-hidden="true" />
+            <span class="sr-only">Interactive rating app</span>
+          </h1>
+        </header>
+
+        <form class="card-main__body">
+          <fieldset class="rating">
+            <legend
+              class="rating__title"
+              aria-describedby="rating-desc"
+              role="heading"
+              aria-level="2"
+            >
+              How did we do?
+            </legend>
+
+            <p id="rating-desc" class="rating__desc">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+
+            <ul class="rating__list-group" role="radiogroup">
+              <li class="rating__list-item">
+                <input
+                  type="radio"
+                  value="1"
+                  name="rating"
+                  id="rating-1"
+                  class="sr-only"
+                />
+                <label for="rating-1" class="rating__radio">1</label>
+              </li>
+              <li class="rating__list-item">
+                <input
+                  type="radio"
+                  value="2"
+                  name="rating"
+                  id="rating-2"
+                  class="sr-only"
+                />
+                <label for="rating-2" class="rating__radio">2</label>
+              </li>
+              <li class="rating__list-item">
+                <input
+                  type="radio"
+                  value="3"
+                  name="rating"
+                  id="rating-3"
+                  class="sr-only"
+                />
+                <label for="rating-3" class="rating__radio">3</label>
+              </li>
+              <li class="rating__list-item">
+                <input
+                  type="radio"
+                  value="4"
+                  name="rating"
+                  id="rating-4"
+                  class="sr-only"
+                />
+                <label for="rating-4" class="rating__radio">4</label>
+              </li>
+              <li class="rating__list-item">
+                <input
+                  type="radio"
+                  value="5"
+                  name="rating"
+                  id="rating-5"
+                  class="sr-only"
+                />
+                <label for="rating-5" class="rating__radio">5</label>
+              </li>
+            </ul>
+
+            <button class="rating__button" type="submit">SUBMIT</button>
+          </fieldset>
+        </form>
+      </article>
+    </main>
+  </body>
+</html>
