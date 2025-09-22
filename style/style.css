@@ -130,8 +130,8 @@ h2 {
 }
 
 .card-main__header .title {
-  inline-size: 2.67rem;
-  block-size: 2.67rem;
+  inline-size: 3.33rem;
+  block-size: 3.33rem;
   border-radius: 50%;
   background-color: var(--grey-800);
   padding: 0.53em;

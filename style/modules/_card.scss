@@ -12,8 +12,8 @@
   @extend %card;
 
   &__header .title {
-    inline-size: px-to-rem(40px);
-    block-size: px-to-rem(40px);
+    inline-size: px-to-rem(50px);
+    block-size: px-to-rem(50px);
     border-radius: map.get($radius, br-full);
     background-color: var(--grey-800);
     padding: map.get($spacing, 2);
